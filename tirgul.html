@@ -1,0 +1,161 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>דף הבית - מבוא ל-HTML ו-CSS</title>
+    <meta name="description" content="הכירו אותנו" />
+    <meta name="keywords" content="HTML, CSS, מבוא, תכנות, פיתוח אתרים" />
+    <meta name="author" content="צוות הפרויקט" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Assistant&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/png" href="images/logo_mini.png" alt="mini logo" />
+    <!-- Scripts -->
+    <script src="jScripts/jquery-3.6.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <ul>
+                    <li class="logo">
+                        <a href="index.html">
+                            <img src="images/לוגו.png" alt="תגית-לי">
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a>HTML</a>
+                        <ul class="dropdown-content">
+                            <li><a href="HTML_Intro.html">מבוא</a></li>
+                            <li class="disabled"><a>תגיות בסיסיות</a></li>
+                            <li class="disabled"><a>טפסים</a></li>
+                            <li><a href="HTML_Tags.html">תגיות סמנטיות</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a>CSS</a>
+                        <ul class="dropdown-content">
+                            <li><a href="CSS_Intro.html">מבוא</a></li>
+                            <li class="disabled"><a>תחביר</a></li>
+                            <li><a href="CSS_Tags.html">תגיות זיהוי</a></li>
+                            <li class="disabled"><a>מודל הקופסה</a></li>
+                            <li class="disabled"><a>רשימות</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a>תרגול</a>
+                        <ul class="dropdown-content">
+                            <li class="disabled"><a>מתמונה לקוד</a></li>
+                            <li class="disabled"><a>צורות</a></li>
+                            <li><a href="tirgul.html">יצירת תגית זיהוי</a></li>
+                        </ul>
+                    </li>
+                    <li class="disabled">
+                        <a>כלים שימושיים</a>
+                    </li>
+                    <li class="dropdown">
+                        <a>אודות</a>
+                        <ul class="dropdown-content">
+                            <li><a href="about.html">מי אנחנו?</a></li>
+                            <li><a href="CONTACT_Us.html">צור קשר</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="siteMap.html">מפת אתר</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div aria-label="breadcrumb" class="breadcrumb-nav">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">דף הבית</a></li>
+                <li class="breadcrumb-item">תרגול</li>
+                <li class="breadcrumb-item active" aria-current="page">טפסים</li>
+            </ol>
+        </div>
+        <main>
+            <h1>יצירת תגית זיהוי לפי בחירת מאפיינים</h1>
+            <div class="container">
+                <form id="interactiveForm" onchange="change()">
+                    <p>בחר תגית זיהוי:</p>
+                    <label><input type="radio" name="identifier" value="class" required> CLASS</label><br>
+                    <label><input type="radio" name="identifier" value="id"> ID</label><br>
+
+                    <p>בחר גופן:</p>
+                    <label><input type="radio" name="font-family" data-css="font-family: Times New Roman;" value="times-new-roman" required> TIMES NEW ROMAN</label><br>
+                    <label><input type="radio" name="font-family" data-css="font-family: Calibri;" value="calibri"> CALIBRI</label><br>
+                    <label><input type="radio" name="font-family" data-css="font-family: Arial;" value="arial"> ARIAL</label><br>
+
+                    <p>בחר צבע:</p>
+                    <label><input type="radio" name="color" data-css="color: black;" value="black" required> שחור</label><br>
+                    <label><input type="radio" name="color" data-css="color: blue;" value="blue"> כחול</label><br>
+                    <label><input type="radio" name="color" data-css="color: red;" value="red"> אדום</label><br>
+
+                    <p>בחר אלמנטים עיצוביים:</p>
+                    <label><input type="checkbox" name="styling" data-css="background-color: teal;" value="background-color"> צבע רקע תכלת</label><br>
+                    <label><input type="checkbox" name="styling" data-css="border: 1px solid black;" value="border"> מסגרת שחורה</label><br>
+                    <label><input type="checkbox" name="styling" data-css="font-weight: bold;" value="bold"> משקל BOLD</label><br>
+                    
+                    <p>בחר ריווחים:</p>
+                    <label><input type="checkbox" name="spacing" data-css="margin-right: 10px;" value="right-margin"> ריווח לימין</label><br>
+                    <label><input type="checkbox" name="spacing" data-css="margin-left: 10px;" value="left-margin"> ריווח לשמאל</label><br>
+                    <label><input type="checkbox" name="spacing" data-css="margin-bottom: 10px;" value="bottom-margin"> ריווח תחתון</label><br>
+                    <label><input type="checkbox" name="spacing" data-css="margin-top: 10px;" value="top-margin"> ריווח עליון</label><br>
+                    <br />
+                    <p>הזן את שם תגית הזיהוי הרצויה (באנגלית):</p><br />
+                    <input type="text" id="tagIdentifier" name="tagIdentifier" required><br />
+                    </br>
+                    <button type="button" id="submitBtn" onclick="radio()" disabled>צור</button>
+                </form>
+                <section class="left">
+                    <div class="frame">
+                        <h4>זיהוי</h4>
+                        <img src="images/HASHTAG.png" class="hidden" id="id" />
+                        <img src="images/DOT.png" class="hidden" id="class" />
+                    </div>
+                    <div class="frame">
+                        <h4>גופן</h4>
+                        <img src="images/times new roman.png" class="hidden" id="times-new-roman" /> <br />
+                        <img src="images/arial.png" class="hidden" id="arial" /> <br />
+                        <img src="images/calibri.png" class="hidden" id="calibri" />
+                    </div>
+
+                    <div class="frame">
+                        <h4>צבע</h4>
+                        <img src="images/black.png" class="hidden" id="black" />
+                        <img src="images/blue.png" class="hidden" id="blue" />
+                        <img src="images/red.png" class="hidden" id="red" />
+                    </div>
+                    <div class="frame">
+                        <h4>אלמנטים עיצוביים</h4>
+                        <img src="images/blue background.png" class="opac" id="background-color" /> <br />
+                        <img src="images/blue frame.png" class="opac" id="border" /> <br />
+                        <img src="images/bold.png" class="opac" id="bold" /> <br />
+                    </div>
+
+                    <div class="frame">
+                        <h4>ריווחים</h4>
+                        <img src="images/margin-right.png" class="opac" id="right-margin" /> <br />
+                        <img src="images/margin-left.png" class="opac" id="left-margin" /> <br />
+                        <img src="images/margin-bottom.png" class="opac" id="bottom-margin" /> <br />
+                        <img src="images/margin-top.png" class="opac" id="top-margin" /> <br />
+                    </div>
+                    <div class="frame">
+                        <h4>:תגית הזיהוי שיצרת</h4>
+                        <p id="output"></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>תגית לי © 2024 </p> <br />
+            <p>תודו לנו אחר כך ;)</p>
+        </footer>
+    </div>
+</body>
+</html>

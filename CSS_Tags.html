@@ -1,0 +1,139 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>דף הבית - מבוא ל-HTML ו-CSS</title>
+    <meta name="description" content="תגיות זיהוי ב-CSS" />
+    <meta name="keywords" content="HTML, CSS, מבוא, תכנות, פיתוח אתרים" />
+    <meta name="author" content="צוות הפרויקט" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Assistant&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/png" href="images/logo_mini.png" alt="mini logo"   />
+    <!-- Scripts -->
+    <script src="jScripts/jquery-3.6.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <ul>
+                    <li class="logo">
+                        <a href="index.html">
+                            <img src="images/לוגו.png" alt="תגית-לי">
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a>HTML</a>
+                        <ul class="dropdown-content">
+                            <li><a href="HTML_Intro.html">מבוא</a></li>
+                            <li class="disabled"><a>תגיות בסיסיות</a></li>
+                            <li class="disabled"><a>טפסים</a></li>
+                            <li><a href="HTML_Tags.html">תגיות סמנטיות</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a>CSS</a>
+                        <ul class="dropdown-content">
+                            <li><a href="CSS_Intro.html">מבוא</a></li>
+                            <li class="disabled"><a>תחביר</a></li>
+                            <li><a href="CSS_Tags.html">תגיות זיהוי</a></li>
+                            <li class="disabled"><a>מודל הקופסה</a></li>
+                            <li class="disabled"><a>רשימות</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a>תרגול</a>
+                        <ul class="dropdown-content">
+                            <li class="disabled"><a>מתמונה לקוד</a></li>
+                            <li class="disabled"><a>צורות</a></li>
+                            <li><a href="tirgul.html">יצירת תגית זיהוי</a></li>
+                        </ul>
+                    </li>
+                    <li class="disabled">
+                        <a>כלים שימושיים</a>
+                    </li>
+                    <li class="dropdown">
+                        <a>אודות</a>
+                        <ul class="dropdown-content">
+                            <li><a href="about.html">מי אנחנו?</a></li>
+                            <li><a href="CONTACT_Us.html">צור קשר</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="siteMap.html">מפת אתר</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div aria-label="breadcrumb" class="breadcrumb-nav">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">דף הבית</a></li>
+                <li class="breadcrumb-item">CSS</li>
+                <li class="breadcrumb-item active" aria-current="page">תגיות זיהוי</li>
+            </ol>
+        </div>
+        <main>
+            <h1>תגיות זיהוי ב-CSS</h1>
+            <p>
+                תגיות זיהוי (Selectors) ב-CSS הן כלי המאפשר למעצבים ולמפתחים לבחור אלמנטים ב-HTML ולעצב אותם. <br />ישנם סוגים שונים של תגיות זיהוי המאפשרות בחירה מדויקת וגמישה של אלמנטים שונים בעמוד.
+            </p> <br />
+            <h2>סוגי תגיות זיהוי:</h2>
+            <div class="highlight-box1-container">
+                <section class="highlight-box1">
+                    <h3>תגיות זיהוי לפי סוג אלמנט (Type Selectors)</h3>
+                    <p>בוחרות אלמנטים לפי השם שלהם (תגיות HTML)</p>
+                    <p>דוגמה: בחירה של כל פסקאות (תגיות &lt;p&gt;)</p>
+                    <p>התגית תהיה: <code>p</code></p>
+                </section>
+                <section class="highlight-box1">
+                    <h3>תגיות זיהוי לפי מזהה (ID Selectors)</h3>
+                    <p>בוחרות אלמנטים לפי הערך של המזהה שלהם (id)</p>
+                    <p>כל מזהה צריך להיות ייחודי בעמוד</p>
+                    <p>תגיות ID מזוהות בעזרת <code>#</code></p>
+                    <p>דוגמה: בחירה של אלמנט עם "id="header</p>
+                    <p>התגית תהיה: <code>#header</code></p>
+                </section>
+                <section class="highlight-box1">
+                    <h3>תגיות זיהוי לפי מחלקה (Class Selectors)</h3>
+                    <p>בוחרות אלמנטים לפי הערך של המחלקה שלהם (class)</p>
+                    <p>ניתן להשתמש באותה מחלקה למספר אלמנטים בעמוד</p>
+                    <p>תגיות class מזוהות בעזרת נקודה (.)</p>
+                    <p>דוגמה: בחירה של אלמנטים עם "class="highlight</p>
+                    <p>התגית תהיה: <code>.highlight</code></p>
+                </section>
+            </div> <br /><br />
+            <h3>דוגמאות מתקדמות לשימוש בתגיות זיהוי</h3> <br />
+            <div class="highlight-box1-container">
+                <section class="highlight-box1 futuristic-section">
+                    <h4>שימוש במספר מחלקות</h4>
+                    <p>ניתן לשלב מספר מחלקות כדי לבחור אלמנטים עם מחלקות מסוימות</p>
+                    <p>דוגמה: בחירה של כותרות עם "class="title שנמצאות תחת מחלקות עם "class="article</p>
+                    <p>התגית תהיה: <code>.article .title</code></p>
+                </section>
+                <section class="highlight-box1 futuristic-section">
+                    <h4>שימוש בתגיות זיהוי צאצאים (Descendant Selectors)</h4>
+                    <p>בוחרות אלמנטים שהם צאצאים של אלמנט אחר</p>
+                    <p>דוגמה: בחירה של אלמנט &lt;p&gt; שנמצא תחת מחלקות עם "class="sub-section שנמצא תחת האלמנט section</p>
+                    <p>התגית תהיה: <code>section .sub-section p</code></p>
+                </section>
+                <section class="highlight-box1 futuristic-section">
+                    <h4>שימוש בתגיות זיהוי ילד ישיר (Child Selectors)</h4>
+                    <p>בוחרות אלמנטים שהם ילדים ישירים של אלמנט אחר</p>
+                    <p>בשונה מתגיות זיהוי צאצאים, בתגיות זיהוי ילד ישיר מזהות אלמנטים שהם ברמה הישירה הבאה בהיררכיה מהאלמנט המדויק</p>
+                    <p>דוגמה: בחירה של תגית &lt;h1&gt; שנמצא ישירות תחת האלמנט header</p>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>תגית לי © 2024 </p> <br />
+            <p>תודו לנו אחר כך ;)</p>
+        </footer>
+    </div>
+</body>
+</html>

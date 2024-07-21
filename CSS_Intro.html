@@ -1,0 +1,113 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>דף הבית - מבוא ל-HTML ו-CSS</title>
+    <meta name="description" content="מבוא ל-CSS" />
+    <meta name="keywords" content="HTML, CSS, מבוא, תכנות, פיתוח אתרים" />
+    <meta name="author" content="צוות הפרויקט" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Assistant&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/png" href="images/logo_mini.png" alt="mini logo"   />
+    <!-- Scripts -->
+    <script src="jScripts/jquery-3.6.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <ul>
+                    <li class="logo">
+                        <a href="index.html">
+                            <img src="images/לוגו.png" alt="תגית-לי">
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a>HTML</a>
+                        <ul class="dropdown-content">
+                            <li><a href="HTML_Intro.html">מבוא</a></li>
+                            <li class="disabled"><a>תגיות בסיסיות</a></li>
+                            <li class="disabled"><a>טפסים</a></li>
+                            <li><a href="HTML_Tags.html">תגיות סמנטיות</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a>CSS</a>
+                        <ul class="dropdown-content">
+                            <li><a href="CSS_Intro.html">מבוא</a></li>
+                            <li class="disabled"><a>תחביר</a></li>
+                            <li><a href="CSS_Tags.html">תגיות זיהוי</a></li>
+                            <li class="disabled"><a>מודל הקופסה</a></li>
+                            <li class="disabled"><a>רשימות</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a>תרגול</a>
+                        <ul class="dropdown-content">
+                            <li class="disabled"><a>מתמונה לקוד</a></li>
+                            <li class="disabled"><a>צורות</a></li>
+                            <li><a href="tirgul.html">יצירת תגית זיהוי</a></li>
+                        </ul>
+                    </li>
+                    <li class="disabled">
+                        <a>כלים שימושיים</a>
+                    </li>
+                    <li class="dropdown">
+                        <a>אודות</a>
+                        <ul class="dropdown-content">
+                            <li><a href="about.html">מי אנחנו?</a></li>
+                            <li><a href="CONTACT_Us.html">צור קשר</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="siteMap.html">מפת אתר</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div aria-label="breadcrumb" class="breadcrumb-nav">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">דף הבית</a></li>
+                <li class="breadcrumb-item">CSS</li>
+                <li class="breadcrumb-item active" aria-current="page">מבוא</li>
+            </ol>
+        </div>
+        <main>
+            <h1>מבוא ל-CSS</h1>
+            <p><strong>CSS</strong> (ראשי תיבות של Cascading Style Sheets) הוא שפה המשמשת לעיצוב והצגת דפי HTML.<br /> HTML מספק את מבנה הדף, ואילו CSS מאפשר להגדיר את המראה החיצוני שלו.</p>
+            <br />
+            <h2 class="blue">למה משמש CSS?</h2>
+            <p>CSS מאפשר לעצב דפי אינטרנט באמצעות הגדרת צבעים, גופנים, מרווחים, גבולות, ועוד. <br />כך ניתן להפריד בין תוכן (HTML) לעיצוב (CSS), מה שמקל על תחזוקה ועיצוב עקבי של האתר.</p>
+            <br />
+            <h2 class="blue">מבנה קובץ CSS</h2>
+            <p>קובץ CSS מורכב מחוקים. <br />כל חוק כולל בורר (selector) והצהרה (declaration).<br /> ההצהרה כוללת תכונה (property) וערך (value).</p>
+            <br />
+            <h2 class="blue">סוגי בוררים</h2>
+            <ul>
+                <li><strong>בורר סוג (Type Selector)</strong>: בוחר אלמנטים לפי שם התגית.</li>
+                <li><strong>בורר מזהה (ID Selector)</strong>: בוחר אלמנטים לפי מזהה ייחודי.</li>
+                <li><strong>בורר מחלקה (Class Selector)</strong>: בוחר אלמנטים לפי מחלקה.</li>
+            </ul>
+            <br />
+            <h2 class="blue">שימושים נוספים ב-CSS</h2>
+            <ul>
+                <li> יצירת עיצובים במצבים ספציפיים או על חלקים מסוימים של האלמנט (למשל :hover).</li>
+                <li> שיטות לעיצוב מערכי אלמנטים בדף.</li>
+                <li>אנימציות ומעברים: הוספת תנועה ואפקטים לאלמנטים.</li>
+            </ul>
+            <br />
+        </main>
+
+        <footer>
+            <p>תגית לי © 2024 </p> <br />
+            <p>תודו לנו אחר כך ;)</p>
+        </footer>
+    </div>
+</body>
+</html>

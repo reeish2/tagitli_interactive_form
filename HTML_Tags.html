@@ -1,0 +1,148 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>דף הבית - מבוא ל-HTML ו-CSS</title>
+    <meta name="description" content="תגיות סמנטיות ב-HTML" />
+    <meta name="keywords" content="HTML, CSS, מבוא, תכנות, פיתוח אתרים" />
+    <meta name="author" content="צוות הפרויקט" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Assistant&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/png" href="images/logo_mini.png" alt="mini logo"   />
+    <!-- Scripts -->
+    <script src="jScripts/jquery-3.6.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <ul>
+                    <li class="logo">
+                        <a href="index.html">
+                            <img src="images/לוגו.png" alt="תגית-לי">
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a>HTML</a>
+                        <ul class="dropdown-content">
+                            <li><a href="HTML_Intro.html">מבוא</a></li>
+                            <li class="disabled"><a>תגיות בסיסיות</a></li>
+                            <li class="disabled"><a>טפסים</a></li>
+                            <li><a href="HTML_Tags.html">תגיות סמנטיות</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a>CSS</a>
+                        <ul class="dropdown-content">
+                            <li><a href="CSS_Intro.html">מבוא</a></li>
+                            <li class="disabled"><a>תחביר</a></li>
+                            <li><a href="CSS_Tags.html">תגיות זיהוי</a></li>
+                            <li class="disabled"><a>מודל הקופסה</a></li>
+                            <li class="disabled"><a>רשימות</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a>תרגול</a>
+                        <ul class="dropdown-content">
+                            <li class="disabled"><a>מתמונה לקוד</a></li>
+                            <li class="disabled"><a>צורות</a></li>
+                            <li><a href="tirgul.html">יצירת תגית זיהוי</a></li>
+                        </ul>
+                    </li>
+                    <li class="disabled">
+                        <a>כלים שימושיים</a>
+                    </li>
+                    <li class="dropdown">
+                        <a>אודות</a>
+                        <ul class="dropdown-content">
+                            <li><a href="about.html">מי אנחנו?</a></li>
+                            <li><a href="CONTACT_Us.html">צור קשר</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="siteMap.html">מפת אתר</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div aria-label="breadcrumb" class="breadcrumb-nav">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">דף הבית</a></li>
+                <li class="breadcrumb-item">HTML</li>
+                <li class="breadcrumb-item active" aria-current="page">תגיות סמנטיות</li>
+            </ol>
+        </div>
+        <main>
+            <h1>מבוא לתגיות סמנטיות</h1>
+            <p>תגיות סמנטיות (Semantic Tags) ב-HTML הן תגיות שמתארות בבירור את משמעות התוכן שהן מכילות.<br /> השימוש בתגיות סמנטיות משפר את הקריאות של הקוד ואת הנגישות של האתר למנועי חיפוש ולכלי עזר לנגישות.</p>
+            <br />
+            <h2>סוגי תגיות סמנטיות</h2> <br />
+            <div class="highlight-box1-container">
+                <div class="highlight-box1" style="text-align: center;">
+                    <h2 class="highlight-box-title">&lt;header&gt;</h2>
+                    <ul style="list-style-type:none;">
+                        <li>מתאר את כותרת העמוד או החלק המרכזי באתר.</li>
+                        <br />
+                        <li>לרוב מכילה לוגו, תפריט ניווט ופרטי זיהוי אחרים.</li>
+                    </ul>
+                </div>
+                <div class="highlight-box1" style="text-align: center;">
+                    <h2 class="highlight-box-title">&lt;nav&gt;</h2>
+                    <ul style="list-style-type:none;">
+                        <li>מגדיר את תפריט הניווט לעמוד.</li>
+                        <br />
+                        <li>התגית מכילה קישורים לעמודים באתר בלבד.</li>
+                    </ul>
+                </div>
+                <div class="highlight-box1" style="text-align: center;">
+                    <h2 class="highlight-box-title">&lt;main&gt;</h2>
+                    <ul style="list-style-type:none;">
+                        <li>עוטפת את התוכן העיקרי באתר.</li>
+                        <br />
+                        <li>לא יכולה להיות יותר מתגית main אחת.</li>
+                    </ul>
+                </div>
+                <div class="highlight-box1" style="text-align: center;">
+                    <h2 class="highlight-box-title">&lt;article&gt;</h2>
+                    <ul style="list-style-type:none;">
+                        <li>מתאר תוכן עצמאי שניתן להפצה ולהבנה מחוץ להקשר הנוכחי.</li>
+                        <br />
+                        <li>מתאים לשימוש בפוסטים בבלוגים, חדשות, ומאמרים.</li>
+                    </ul>
+                </div>
+                <div class="highlight-box1" style="text-align: center;">
+                    <h2 class="highlight-box-title">&lt;section&gt;</h2>
+                    <ul style="list-style-type:none;">
+                        <li>מתאר קטע תוכן מרכזי ומובחן בתוך הדף.</li>
+                        <br />
+                        <li>יכול לשמש לקטעי תוכן עם נושא דומה כמו פרקים, נושאים או חלקים שונים של הדף.</li>
+                        <br />
+                        <li>התגית תמיד תכיל גם את הנושא של התוכן.</li>
+                    </ul>
+                </div>
+                <div class="highlight-box1" style="text-align: center;">
+                    <h2 class="highlight-box-title">&lt;footer&gt;</h2>
+                    <ul style="list-style-type:none;">
+                        <li>מתאר את תחתית העמוד או החלק המרכזי.</li>
+                        <br />
+                        <li>לרוב מכיל קרדיטים, קישורים נוספים, מידע על זכויות יוצרים ומידע על האתר.</li>
+                    </ul>
+                </div>
+            </div>
+            <br />
+            <h2>לסיכום</h2>
+            <p>השימוש בתגיות סמנטיות ב-HTML הוא חלק חשוב בבניית אתרים מודרניים ונגישים. <br />הוא לא רק משפר את הקריאות של הקוד והנגישות, אלא גם עוזר למנועי החיפוש להבין את מבנה התוכן ולדרג אותו בצורה טובה יותר. <br />מומלץ לשלב תגיות סמנטיות בכל פרויקט פיתוח אתרים.</p>
+        </main>
+        <footer>
+            <p>תגית לי © 2024 </p> <br />
+            <p>תודו לנו אחר כך ;)</p>
+        </footer>
+    </div>
+</body>
+</html>
